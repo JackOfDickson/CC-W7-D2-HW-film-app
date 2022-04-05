@@ -35,13 +35,13 @@ const FilmBox = () => {
 
 
         return (
-        <>
-            <h1>FilmBox</h1>
+        <div class='filmbox'>
+            <h1>Upcoming films!</h1>
             <hr/>
             <FilmList films={films}/>
             <hr/>
             <MoreFilms/>
-        </>
+        </div>
         )
     }
 

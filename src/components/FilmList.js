@@ -1,12 +1,17 @@
-import React, {useState} from "react"
+import React from "react"
 import Film from "./Film"
 
-const FilmList = () => {
+const FilmList = ({films}) => {
+
+    const filmNodes = films.map(film => {
+        return (
+            <Film title={film.name} key={film.id} url={film.url}/>
+        )
+    })
 
     return (
     <>
-        <h2>FilmList</h2>
-        <Film/>
+        {filmNodes}
     </>
     )
 }

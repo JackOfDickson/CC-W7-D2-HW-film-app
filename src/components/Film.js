@@ -1,9 +1,9 @@
-import React, {useState} from "react"
+import React from "react"
 
-const Film = () => {
+const Film = ({title, id, url}) => {
 
     return (
-        <p>Film</p>
+        <p><a href={url}>{title}</a></p>
     )
 }
 
